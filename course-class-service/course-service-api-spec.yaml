@@ -144,3 +144,12 @@ paths:
     patch:
     
     delete:
+     '409':
+          description: Conflict - invalid duplicates 
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
